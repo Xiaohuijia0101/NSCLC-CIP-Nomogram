@@ -1,0 +1,12 @@
+#install.packages("DynNom")
+library(DynNom)
+DynNom(fm,rt)
+
+#install.packages("rsconnect")
+library(rsconnect)
+
+rsconnect::setAccountInfo(name='nsclc-cip',
+                          token='78B0BEB6EF687A3AA75239F4858AF29B',
+                          secret='Jgj/cRXQUAiF3A1B9B4Wqlxpg/vzkkBTICAJiGjL')
+
+DNbuilder(fm)
